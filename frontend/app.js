@@ -33,7 +33,7 @@ async function askLLM(userText) {
       { role: 'user', content: userText }
     ]
   };
-  const res = await fetch('http://localhost:8000/chat', {
+  const res = await fetch('https://voicebot-ph4e.onrender.com/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
