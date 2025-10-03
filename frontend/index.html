@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>100x – VoiceBot Demo</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>100x – VoiceBot (Lohith)</h1>
+    <p class="sub">Tap the mic, ask interview questions, and hear the reply.</p>
+
+    <div class="card">
+      <div class="controls">
+        <button id="micBtn">🎤 Start</button>
+        <button id="stopBtn" disabled>⏹ Stop</button>
+        <label class="toggle">
+          <input type="checkbox" id="autoSpeak" checked />
+          <span>Speak answers aloud</span>
+        </label>
+      </div>
+
+      <div class="io">
+        <div class="pane">
+          <h3>You said</h3>
+          <textarea id="youSaid"></textarea>
+        </div>
+        <div class="pane">
+          <h3>Bot reply</h3>
+          <textarea id="botReply"></textarea>
+        </div>
+      </div>
+
+      <div class="manual">
+        <input id="manualInput" placeholder="Or type your question and press Enter…" />
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

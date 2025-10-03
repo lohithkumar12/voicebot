@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background: #f2f6ff; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: auto; }
+.card { background: white; padding: 16px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.controls { display: flex; gap: 10px; margin-bottom: 12px; }
+textarea { width: 100%; min-height: 120px; margin-top: 8px; padding: 8px; }
+.manual { margin-top: 10px; }
